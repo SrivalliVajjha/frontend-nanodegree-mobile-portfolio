@@ -1,3 +1,11 @@
+## Guidelines
+
+- The source code is in folder **src**.
+- The production code(with minified code) is in directory **dist**.
+- Run the `index.html` from **dist** directory.
+- For viewing the source code, refer the **src** directory.
+
+
 ## Optimizations made to `index.html`
 
 - Fonts css made to load asynchronously.
