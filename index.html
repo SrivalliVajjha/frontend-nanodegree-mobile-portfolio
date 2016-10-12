@@ -69,8 +69,14 @@
 
   <body>
     <header>
-      <a href="/"><img src="img/profilepic_small.jpg"></a>
-      <p>Cameron Pittman<br><span>Course Developer</span></p>
+      <a href="/">
+          <picture>
+            <source media="(max-width: 500px)" srcset="img/profilepic_xsmall.jpg" type="image/jpg">
+            <source media="(min-width: 501px)" srcset="img/profilepic_small.jpg" type="image/jpg">
+            <img src="img/profilepic_small.jpg" alt="profile pic">
+        </picture>
+    </a>
+      <p>Cameron S Pittman<br><span>Course Developer</span></p>
     </header>
 
     <div class="container">
