@@ -17,9 +17,15 @@
 
 ## Optimizations made to `views/js/main.js` and `views/css/style.css`
 
+#### For achieving 60fps
 - Made `items` and `itemLength` as global variable and defined it outside `updatePositions()`.
 - Moved few variables outside `for` loop in `updatePositions()`.
 - Used `style.transform` property instead of `style.left` property.
 - Number of pizzas in background is calculated according to the screen height.
 - Replaced `querySelector` by `getElement method`.
 - Modified the `.mover` class in CSS file.
+
+#### For resizing pizza within 5ms
+- Moved few variables out of `resizePizzas()` function.
+- Replaced `querySelector` by `getElement method`.
+- Optimized switch function to directly change the width in `changePizzaSizes()` function.
