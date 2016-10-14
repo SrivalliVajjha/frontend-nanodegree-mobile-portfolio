@@ -4,7 +4,8 @@
 - The production code(with minified code) is in directory **dist**.
 - Run the `index.html` from **dist** directory.
 - For viewing the source code, refer the **src** directory.
-
+- Use **ngrok.exe** in **dist** directory to host index.html on server for testing on Pagespeed Insights
+    To use **ngrok.exe**, run it, and in command box, type `./ngrok http 8000` 
 
 ## Optimizations made to `index.html`
 
