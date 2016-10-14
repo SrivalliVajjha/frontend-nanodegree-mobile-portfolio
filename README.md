@@ -1,4 +1,4 @@
-## Guidelines
+## Guidelines 
 
 - The source code is in folder **src**.
 - The production code(with minified code) is in directory **dist**.
@@ -15,4 +15,11 @@
 - Set the JS files to `async`.
 - Moved Google Analytics `<script>` file to bottom of `<body>`.
 
-## Optimizations made to `views/js/main.js`
+## Optimizations made to `views/js/main.js` and `views/css/style.css`
+
+- Made `items` and `itemLength` as global variable and defined it outside `updatePositions()`.
+- Moved few variables outside `for` loop in `updatePositions()`.
+- Used `style.transform` property instead of `style.left` property.
+- Number of pizzas in background is calculated according to the screen height.
+- Replaced `querySelector` by `getElement method`.
+- Modified the `.mover` class in CSS file.
