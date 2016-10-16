@@ -511,16 +511,10 @@ function updatePositions() {
   //Moved few variables out of for loop
   var i;
   var scrollTop = document.body.scrollTop / 1250;
-  var phaseArray = [];
-  for(i = 0; i < itemLength; i++) {
-    phaseArray.push(Math.sin(scrollTop + i));
-  }
 
   for (i = 0; i < itemLength; i++) {
-    //var phase = Math.sin(scrollTop + (i % 5));
-    // items[i].style.left = items[i].basicLeft + 100 * phase + 'px';
-    var transX = items[i].basicLeft + 100 * phaseArray[i % 5] + 'px';
-    items[i].style.transform =  'translateX('+transX+')';  //Used transform property instead of left property
+    var phase = Math.sin(scrollTop + (i % 5));
+    items[i].style.left = items[i].basicLeft + 100 * phase + 'px';
   }
 
   // User Timing API to the rescue again. Seriously, it's worth learning.
